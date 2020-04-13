@@ -414,8 +414,12 @@ footer .info .copyright {
 
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+    footer .footer-social {
+        margin-top: 15px;
+    }
     footer .footer-sidebar {
-        text-align: center;
+        text-align: left;
+        margin-top: 30px;
     }
 
 }

@@ -9,3 +9,17 @@ body {
 .bx-core-window.bx-core-adm-dialog input[type=checkbox] {
     display: inline;
 }
+footer .block-footer-modile-menu {
+    display: none;
+}
+@media (max-width: 767.98px) {
+    body {
+        padding-top: 0;
+    }
+    footer .block-footer-menu {
+        display: none;
+    }
+    footer .block-footer-modile-menu {
+        display: flex;
+    }
+}
