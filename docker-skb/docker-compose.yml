@@ -1,0 +1,46 @@
+version: '3.0'
+
+services:
+  skb-php-fpm:
+    build:
+      context: ./php-fpm
+    volumes:
+      - ../src:/var/www
+      - ./freetds.conf:/etc/freetds/freetds.conf
+    links:
+      - database-skb
+
+  skb-php-cli:
+    build:
+      context: ./php-cli
+    volumes:
+      - ../src:/var/www
+      - ./freetds.conf:/etc/freetds/freetds.conf
+    stdin_open: true
+    tty: true
+    links:
+      - database-skb
+
+  skb-nginx:
+    build:
+      context: ./nginx
+    volumes:
+      - ../src:/var/www
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/sites/:/etc/nginx/sites-available
+      - ./nginx/conf.d/:/etc/nginx/conf.d
+    ports:
+      - "80:80"
+    depends_on:
+      - skb-php-fpm
+
+  database-skb:
+    build:
+      context: ./database
+    environment:
+      - MYSQL_DATABASE=db_skb
+      - MYSQL_USER=db_skb
+      - MYSQL_PASSWORD=db_password
+      - MYSQL_ROOT_PASSWORD=docker
+    ports:
+      - "3306:3306"
