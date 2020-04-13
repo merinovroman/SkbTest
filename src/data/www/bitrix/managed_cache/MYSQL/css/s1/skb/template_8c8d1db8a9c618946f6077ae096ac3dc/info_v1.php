@@ -1,1 +1,0 @@
-<?php $filesInfo = array("/local/templates/skb/styles.css" => "15867898521274","/local/templates/skb/template_styles.css" => "15867898528718",); ?>

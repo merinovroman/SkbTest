@@ -1,1 +1,0 @@
-<?php $filesInfo = array("/local/templates/skb/components/bitrix/catalog/.default_old1/bitrix/catalog.top/.default/section/script.js" => "158679847739805",); ?>
