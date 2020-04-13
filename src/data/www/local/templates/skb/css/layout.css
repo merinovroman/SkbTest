@@ -256,7 +256,7 @@ footer .logo,
 
 /* FOOTER */
 footer {
-    color: #ffffff;
+    color: #262626;
     background-color: #F2F2F2;
     /*font-family: 'Roboto', sans-serif;*/
     /*font-weight: 300;*/
@@ -307,6 +307,46 @@ footer .footer-menu a {
     font-size: 14px;
 }
 
+footer .block-curs-valut {
+    border-bottom: 1px solid #D4D4D4;
+}
+
+footer .block-curs-valut .item-curs-valut {
+    margin: 15px 0 10px;
+}
+footer .block-curs-valut .item-curs-valut p {
+    font-size: 14px;
+}
+footer .block-curs-valut-value {
+    padding: 10px 0;
+}
+
+footer .free-russia {
+    font-size: 13px;
+    color: #747474;
+    margin-top: 15px;
+}
+footer .free-phone {
+    font-size: 28px;
+    color: #262626;
+}
+footer .container .call-back a {
+    font-size: 14px;
+    color: #038C73;
+    text-decoration: underline;
+}
+
+footer.bg-gradient {
+    color: #FFFFFF;
+    padding: 30px 0 30px;
+}
+footer.bg-gradient .copyright {
+    font-size: 12px;
+}
+footer.bg-gradient .footer-social a {
+    margin-right: 33px;
+}
+
 footer .footer-menu .sep {
     height: 28px;
 }
@@ -336,7 +376,6 @@ footer .footer-button:hover {
     color: #00675c;
 }
 
-footer .footer-social,
 footer .footer-shareholder,
 footer .footer-companies {
     padding: 10px 0;
