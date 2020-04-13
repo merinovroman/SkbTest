@@ -1,0 +1,1 @@
+<?php $filesInfo = array("/local/templates/skb/components/bitrix/catalog/.default_old1/style.css" => "1586798478697",); ?>

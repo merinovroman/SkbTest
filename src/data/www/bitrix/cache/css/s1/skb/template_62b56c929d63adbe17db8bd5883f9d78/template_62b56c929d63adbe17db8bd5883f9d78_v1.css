@@ -1,0 +1,14 @@
+
+
+/* Start:/local/templates/skb/styles.css?1586798315237*/
+body {
+    padding-top: 59px;
+}
+
+.bx-core-window.bx-core-adm-dialog input[type=radio] + label:before,
+.bx-core-window.bx-core-adm-dialog input[type=checkbox] + label:before {
+    border: none;
+    background-color: transparent;
+}
+/* End */
+/* /local/templates/skb/styles.css?1586798315237 */

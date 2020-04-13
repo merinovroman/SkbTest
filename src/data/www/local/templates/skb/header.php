@@ -1,136 +1,110 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die(); ?>
 <?
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title><?$APPLICATION->ShowTitle()?></title>
-	<link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico" />
-	
-	<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/common.css" />
-	
-	<?$APPLICATION->ShowHead();?>
-	
-	<!--[if lte IE 6]>
-	<style type="text/css">
-		
-		#support-question { 
-			background-image: none;
-			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/question.png', sizingMethod = 'crop'); 
-		}
-		
-		#support-question { left: -9px;}
-		
-		#banner-overlay {
-			background-image: none;
-			filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/overlay.png', sizingMethod = 'crop');
-		}
-		
-	</style>
-	<![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><? $APPLICATION->ShowTitle() ?></title>
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= SITE_TEMPLATE_PATH ?>/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= SITE_TEMPLATE_PATH ?>/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= SITE_TEMPLATE_PATH ?>/favicon-16x16.png">
 
-	<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/colors.css" />
-		
+    <link rel="stylesheet" type="text/css" href="<?= SITE_TEMPLATE_PATH ?>/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= SITE_TEMPLATE_PATH ?>/css/global.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= SITE_TEMPLATE_PATH ?>/css/layout.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= SITE_TEMPLATE_PATH ?>/css/font-awesome.min.css"/>
+    <?/*?><link rel="stylesheet" type="text/css" href="<?= SITE_TEMPLATE_PATH ?>/common.css"/>
+    <link rel="stylesheet" type="text/css" href="<?= SITE_TEMPLATE_PATH ?>/colors.css"/><?//*/?>
+
+
+
+    <? $APPLICATION->ShowHead(); ?>
+
 </head>
-<body>
-		<div id="page-wrapper">
-			<div id="panel"><?$APPLICATION->ShowPanel();?></div>
-			<div id="header">
-				<table>
-					<tr>
-						<td id="logo"><a href="<?=SITE_DIR?>" title="<?=GetMessage("HDR_GOTO_MAIN")?>"><?$APPLICATION->IncludeFile(
-									SITE_DIR."include/company_name.php",
-									Array(),
-									Array("MODE"=>"html")
-								);?></a></td>
-						<td id="slogan"><?$APPLICATION->IncludeFile(
-									SITE_DIR."include/company_slogan.php",
-									Array(),
-									Array("MODE"=>"html")
-								);?></td>
-					</tr>
-				</table>
+<body class="banner-to-new">
+    <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
+    <div class="menu">
+        <div class="menu-main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-auto">
+                        <a href="/chastnym-licam">
+                            <div class="logo"></div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <a class="menu-item active" href="/chastnym-licam">Частным лицам</a>
+                    </div>
+                    <div class="col-12 col-md col-lg-auto">
+                        <a class="menu-item" href="/predprinimatelyam-i-biznesu">Бизнесу</a>
+                    </div>
+                    <div class="col-12 col-md-auto d-none d-lg-inline">
+                        <a class="menu-item" href="/o-banke">О банке</a></div>
+                    <div class="col-12 col-md text-md-right d-none d-lg-inline">
+                        <a class="menu-item" href="/atms">Офисы и банкоматы</a></div>
+                    <div class="col-12 col-md-auto">
+                        <a class="menu-item city-select" href="#" data-toggle="modal" data-target="#modalCitiesList">
+                            <i class="fa fa-location-arrow"></i>
+                            Выберите город </a>
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <a href="#search" class="menu-item" id="search">
+                            <i class="fa fa-search"></i> <span class="d-inline d-md-none">Поиск</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-additional">
+            <div class="container">
+                <div class="row personal">
+                    <div class="col-12 col-md-auto">
+                        <a class="menu-item active" href="/chastnym-licam/kredity">Кредиты</a>
+                        <a class="menu-item" href="/chastnym-licam/kredity/ipoteka">Ипотека</a>
+                        <a class="menu-item" href="/chastnym-licam/vklady">Вклады</a>
+                        <a class="menu-item" href="/chastnym-licam/karty">Карты</a>
+                        <a class="menu-item" href="/chastnym-licam/premialnoe-obsluzivanie">Премиальное обслуживание</a>
+                        <a class="menu-item" href="/offers">Акции</a></div>
+                    <div class="col px-lg-0">
+                        <nobr>
+                            <a class="menu-item menu-more" data-toggle="collapse" href="#morePersonal" role="button"
+                               aria-expanded="false" aria-controls="morePersonal">Ещё <i class="fa fa-angle-down"></i>
+                            </a>
+                        </nobr>
+                    </div>
+                    <div class="col-auto">
+                        <a href="https://ib.skbbank.ru/login" class="btn btn-coral-white btn-menu" target="_blank">Интернет-банк</a>
+                    </div>
+                </div>
+                <div class="row search" style="display:none;">
+                    <div class="col-12">
+                        <form class="form-search_mobile" action="/search" method="get">
+                            <input type="text" name="q" value="" placeholder="Найти">
+                            <i class="fa fa-search"></i>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-				
-				<div id="search">
-				<?$APPLICATION->IncludeComponent("bitrix:search.form", "flat", array(
-					"PAGE" => "#SITE_DIR#search/index.php"
-					),
-					false
-				);?>
-				</div>
-			</div>
-
-<?$APPLICATION->IncludeComponent("bitrix:menu", "top", array(
-	"ROOT_MENU_TYPE" => "top",
-	"MENU_CACHE_TYPE" => "Y",
-	"MENU_CACHE_TIME" => "36000000",
-	"MENU_CACHE_USE_GROUPS" => "Y",
-	"MENU_CACHE_GET_VARS" => array(
-	),
-	"MAX_LEVEL" => "1",
-	"CHILD_MENU_TYPE" => "left",
-	"USE_EXT" => "N",
-	"ALLOW_MULTI_SELECT" => "N"
+    <div class="container">
+        <?$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	".default", 
+	array(
+		"START_FROM" => "1",
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"COMPONENT_TEMPLATE" => ".default"
 	),
 	false
 );?>
-				
-		
-			<div id="content-wrapper">
-				<div id="content">
-				<?if($APPLICATION->GetCurPage(false)==SITE_DIR):?>
-					<div id="banner">
-						<div id="banner-image"><?$APPLICATION->IncludeFile(
-									SITE_DIR."include/banner.php",
-									Array(),
-									Array("MODE"=>"html")
-								);?></div>
-						<table cellspacing="0" id="banner-text">
-							<tr>
-								<td width="35%">&nbsp;</td>
-								<td>
-								<?$APPLICATION->IncludeFile(
-									SITE_DIR."include/banner_text.php",
-									Array(),
-									Array("MODE"=>"text")
-								);?>
-								</td>
-							</tr>
-						</table>
-						<div id="banner-overlay"></div>
-					</div>
-				<?else:?>
-					<div id="breadcrumb">
-						<?$APPLICATION->IncludeComponent("bitrix:breadcrumb", ".default", array(
-	"START_FROM" => "1",
-	"PATH" => "",
-	"SITE_ID" => SITE_ID
-	),
-	false
-);?>
-					</div>					
-				<?endif?>					
-					<div id="workarea-wrapper">
-						<div id="left-menu">
-						<?$APPLICATION->IncludeComponent("bitrix:menu", "tree", array(
-							"ROOT_MENU_TYPE" => "leftfirst",
-							"MENU_CACHE_TYPE" => "Y",
-							"MENU_CACHE_TIME" => "36000000",
-							"MENU_CACHE_USE_GROUPS" => "Y",
-							"MENU_CACHE_GET_VARS" => array(
-							),
-							"MAX_LEVEL" => "4",
-							"CHILD_MENU_TYPE" => "left",
-							"USE_EXT" => "N",
-							"ALLOW_MULTI_SELECT" => "N"
-							),
-							false
-						);?>
-						</div>						
-						<div id="workarea">
-							<div id="workarea-inner">
-							<h5><?$APPLICATION->ShowTitle(false);?></h5> 
+    </div>
 
+    <div class="products">
+        <div class="container">
+            <h1 class="green mt-5"><?$APPLICATION->ShowTitle(false);?></h1>

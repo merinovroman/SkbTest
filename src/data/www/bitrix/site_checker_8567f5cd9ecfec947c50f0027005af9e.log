@@ -1,113 +1,91 @@
-2020-Apr-13 20:02:42 Наличие необходимых модулей php (check_php_modules): Ok
+2020-Apr-13 22:41:10 Наличие необходимых модулей php (check_php_modules): Ok
 Все необходимые модули установлены
-2020-Apr-13 20:02:43 Обязательные параметры PHP (check_php_settings): Ok
+2020-Apr-13 22:41:10 Обязательные параметры PHP (check_php_settings): Ok
 Настройки правильные
-2020-Apr-13 20:02:43 Модули веб-сервера (check_security): Ok
+2020-Apr-13 22:41:10 Модули веб-сервера (check_security): Ok
 Конфликтов не выявлено
-2020-Apr-13 20:02:43 Значения переменных сервера (check_server_vars): Ok
+2020-Apr-13 22:41:10 Значения переменных сервера (check_server_vars): Ok
 Корректные
-2020-Apr-13 20:02:43 Сохранение сессии (check_session): Ok
+2020-Apr-13 22:41:10 Сохранение сессии (check_session): Ok
 50% done
-2020-Apr-13 20:02:43 Сохранение сессии (check_session): Ok
+2020-Apr-13 22:41:10 Сохранение сессии (check_session): Ok
 Успешно
-2020-Apr-13 20:02:43 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
+2020-Apr-13 22:41:10 Параметры настройки UTF (mbstring и константа BX_UTF) (check_mbstring): Ok
 Правильные. Сайт работает в UTF кодировке
-2020-Apr-13 20:02:43 Служебные скрипты в корне сайта (check_install_scripts): Ok
+2020-Apr-13 22:41:10 Служебные скрипты в корне сайта (check_install_scripts): Ok
 Отсутствуют
-2020-Apr-13 20:02:43 Работа с сокетами (check_socket): Fail
-Connection to localhost:80	Fail
-Socket error [99]: Cannot assign requested address
+2020-Apr-13 22:41:11 Работа с сокетами (check_socket): Fail
+Connection to skbtest.ru:80	Fail
+Socket error [111]: Connection refused
 
 Ошибка! Не работает
-2020-Apr-13 20:02:44 Выполнение агентов на cron (check_bx_crontab): Warning
+2020-Apr-13 22:41:11 Выполнение агентов на cron (check_bx_crontab): Warning
 Замечание. Агенты выполняются на хитах, рекомендуется перевести выполнение агентов на cron
-2020-Apr-13 20:02:44 Параметры подключения к базе данных (check_dbconn_settings): Ok
+2020-Apr-13 22:41:11 Параметры подключения к базе данных (check_dbconn_settings): Ok
 Успешно
-2020-Apr-13 20:02:44 Лишний вывод в файлах конфигурации (check_dbconn): Warning
+2020-Apr-13 22:41:11 Лишний вывод в файлах конфигурации (check_dbconn): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:44 Сохранение сессии без UserAgent (check_session_ua): Warning
+2020-Apr-13 22:41:11 Сохранение сессии без UserAgent (check_session_ua): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:44 Настройки сайтов (check_sites): Ok
+2020-Apr-13 22:41:11 Настройки сайтов (check_sites): Ok
 Правильные
-2020-Apr-13 20:02:44 Передача объектов по ссылке (check_clone): Ok
+2020-Apr-13 22:41:11 Передача объектов по ссылке (check_clone): Ok
 Успешно
-2020-Apr-13 20:02:44 Размер стека и pcre.recursion_limit (check_pcre_recursion): Warning
+2020-Apr-13 22:41:11 Размер стека и pcre.recursion_limit (check_pcre_recursion): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:44 Загрузка файла (check_upload): Warning
+2020-Apr-13 22:41:11 Загрузка файла (check_upload): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:44 Загрузка файла больше 4Мб (check_upload_big): Warning
+2020-Apr-13 22:41:11 Загрузка файла больше 4Мб (check_upload_big): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:44 Загрузка файла через php://input (check_upload_raw): Warning
+2020-Apr-13 22:41:11 Загрузка файла через php://input (check_upload_raw): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:45 Передача POST запроса с большим числом параметров (check_post): Warning
+2020-Apr-13 22:41:12 Передача POST запроса с большим числом параметров (check_post): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:45 Отправка почты (check_mail): Fail
+2020-Apr-13 22:41:12 Отправка почты (check_mail): Fail
 Ошибка! Не работает
-2020-Apr-13 20:02:45 Отправка почтового сообщения больше 64Кб (check_mail_big): Fail
+2020-Apr-13 22:41:12 Отправка почтового сообщения больше 64Кб (check_mail_big): Fail
 Ошибка! Не работает
-2020-Apr-13 20:02:45 Проверка на наличие неотправленных сообщений (check_mail_b_event): Ok
+2020-Apr-13 22:41:12 Проверка на наличие неотправленных сообщений (check_mail_b_event): Ok
 Успешно
-2020-Apr-13 20:02:45 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Warning
+2020-Apr-13 22:41:12 Внутреннее перенаправление (функция LocalRedirect) (check_localredirect): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:45 Фактическое ограничение памяти (check_memory_limit): Warning
+2020-Apr-13 22:41:12 Фактическое ограничение памяти (check_memory_limit): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:45 Работа с файлами кеша (check_cache): Ok
+2020-Apr-13 22:41:12 Работа с файлами кеша (check_cache): Ok
 Успешно
-2020-Apr-13 20:02:46 Доступ к серверу обновлений (check_update): Ok
+2020-Apr-13 22:41:13 Доступ к серверу обновлений (check_update): Ok
 Успешно
-2020-Apr-13 20:02:46 HTTP авторизация (check_http_auth): Warning
+2020-Apr-13 22:41:13 HTTP авторизация (check_http_auth): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:46 Создание и запуск файла (check_exec): Warning
+2020-Apr-13 22:41:13 Создание и запуск файла (check_exec): Warning
 Замечание. Не удалось проверить из-за ошибки в работе с сокетами
-2020-Apr-13 20:02:46 Функция getimagesize для swf (check_getimagesize): Ok
+2020-Apr-13 22:41:13 Функция getimagesize для swf (check_getimagesize): Ok
 Успешно
-2020-Apr-13 20:02:46 Версия MySQL-сервера (check_mysql_bug_version): Ok
+2020-Apr-13 22:41:13 Версия MySQL-сервера (check_mysql_bug_version): Ok
 Успешно
-2020-Apr-13 20:02:47 Время на БД и веб-сервере (check_mysql_time): Fail
+2020-Apr-13 22:41:14 Время на БД и веб-сервере (check_mysql_time): Fail
 Ошибка! Время отличается на 18000 секунд
-2020-Apr-13 20:02:47 Режим работы MySQL (check_mysql_mode): Fail
+2020-Apr-13 22:41:14 Режим работы MySQL (check_mysql_mode): Fail
 Ошибка! innodb_strict_mode=ON, требуется OFF
-2020-Apr-13 20:02:47 Кодировка соединения (check_mysql_connection_charset): Ok
+2020-Apr-13 22:41:14 Кодировка соединения (check_mysql_connection_charset): Ok
 character_set_connection=utf8, collation_connection=utf8_unicode_ci, character_set_results=utf8
 Успешно
-2020-Apr-13 20:02:47 Кодировка базы данных (check_mysql_db_charset): Ok
+2020-Apr-13 22:41:14 Кодировка базы данных (check_mysql_db_charset): Ok
 CHARSET=utf8, COLLATION=utf8_unicode_ci
 Успешно
-2020-Apr-13 20:02:47 Кодировки таблиц в БД (check_mysql_table_charset): Ok
+2020-Apr-13 22:41:14 Кодировки таблиц в БД (check_mysql_table_charset): Ok
 Успешно
-2020-Apr-13 20:02:49 Структура базы данных (check_mysql_table_structure): Ok
+2020-Apr-13 22:41:15 Структура базы данных (check_mysql_table_structure): Ok
 0% done
-2020-Apr-13 20:02:50 Структура базы данных (check_mysql_table_structure): Ok
+2020-Apr-13 22:41:16 Структура базы данных (check_mysql_table_structure): Ok
 5% done
-2020-Apr-13 20:03:01 Структура базы данных (check_mysql_table_structure): Ok
+2020-Apr-13 22:41:24 Структура базы данных (check_mysql_table_structure): Ok
 11% done
-2020-Apr-13 20:03:01 Структура базы данных (check_mysql_table_structure): Ok
+2020-Apr-13 22:41:24 Структура базы данных (check_mysql_table_structure): Ok
 17% done
-2020-Apr-13 20:03:09 Структура базы данных (check_mysql_table_structure): Ok
+2020-Apr-13 22:41:33 Структура базы данных (check_mysql_table_structure): Ok
 23% done
-2020-Apr-13 20:03:14 Структура базы данных (check_mysql_table_structure): Ok
+2020-Apr-13 22:41:37 Структура базы данных (check_mysql_table_structure): Ok
 29% done
-2020-Apr-13 20:04:11 Структура базы данных (check_mysql_table_structure): Ok
+2020-Apr-13 22:42:28 Структура базы данных (check_mysql_table_structure): Ok
 35% done
-2020-Apr-13 20:05:11 Структура базы данных (check_mysql_table_structure): Ok
-41% done
-2020-Apr-13 20:08:27 Структура базы данных (check_mysql_table_structure): Ok
-47% done
-2020-Apr-13 20:08:32 Структура базы данных (check_mysql_table_structure): Ok
-52% done
-2020-Apr-13 20:08:56 Структура базы данных (check_mysql_table_structure): Ok
-58% done
-2020-Apr-13 20:09:22 Структура базы данных (check_mysql_table_structure): Ok
-64% done
-2020-Apr-13 20:09:47 Структура базы данных (check_mysql_table_structure): Ok
-70% done
-2020-Apr-13 20:10:24 Структура базы данных (check_mysql_table_structure): Ok
-76% done
-2020-Apr-13 20:10:36 Структура базы данных (check_mysql_table_structure): Ok
-82% done
-2020-Apr-13 20:10:58 Структура базы данных (check_mysql_table_structure): Ok
-88% done
-2020-Apr-13 20:10:58 Структура базы данных (check_mysql_table_structure): Ok
-94% done
-2020-Apr-13 20:10:58 Структура базы данных (check_mysql_table_structure): Ok
-Успешно
