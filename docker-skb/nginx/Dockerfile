@@ -1,4 +1,6 @@
-FROM nginx:1.16-alpine
+FROM nginx:1.17
+
+RUN usermod -u 1000 www-data
 
 CMD ["nginx"]
 
