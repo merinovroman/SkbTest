@@ -1,7 +1,8 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Кредит «Простой и удобный»");
+$APPLICATION->SetTitle("Кредит Пенсионный");
 ?>
+
     <div class="row card-deck">
         <div class="col-12 col-sm">
             <div class="block-main-top">
@@ -35,4 +36,5 @@ $APPLICATION->SetTitle("Кредит «Простой и удобный»");
             </div>
         </div>
     </div>
+
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

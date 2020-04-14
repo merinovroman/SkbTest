@@ -107,7 +107,17 @@
                     </div>
                     <div class="row free-phone">
                         <div class="col-12 col-sm">
-                            8 800 1000 600
+                            <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
+                                array(
+                                    "COMPONENT_TEMPLATE" => ".default",
+                                    "PATH" => SITE_TEMPLATE_PATH."/include/free-phone.php",
+                                    "AREA_FILE_SHOW" => "file",
+                                    "AREA_FILE_SUFFIX" => "",
+                                    "AREA_FILE_RECURSIVE" => "Y",
+                                    "EDIT_TEMPLATE" => "standard.php"
+                                ),
+                                false
+                            );?>
                         </div>
                     </div>
                     <div class="row call-back">
@@ -123,7 +133,17 @@
         <div class="container">
             <div class="row text-left">
                 <div class="col-12 col-md-5 copyright">
-                    © СКБ-банк, 2019 Генеральная лицензия № 705<br /> Центрального банка Российской Федерации
+                    <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
+                        array(
+                            "COMPONENT_TEMPLATE" => ".default",
+                            "PATH" => SITE_TEMPLATE_PATH."/include/copyright.php",
+                            "AREA_FILE_SHOW" => "file",
+                            "AREA_FILE_SUFFIX" => "",
+                            "AREA_FILE_RECURSIVE" => "Y",
+                            "EDIT_TEMPLATE" => "standard.php"
+                        ),
+                        false
+                    );?>
                 </div>
                 <div class="offset-md-1 col-12 col-md-3 footer-social">
                     <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
