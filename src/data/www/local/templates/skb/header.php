@@ -231,4 +231,4 @@ IncludeTemplateLangFile(__FILE__);
 
     <div class="products">
         <div class="container">
-            <h1 class="green mt-5"><?$APPLICATION->ShowTitle(false);?></h1>
+            <h1 class="mt-5"><?$APPLICATION->ShowTitle(false);?></h1>

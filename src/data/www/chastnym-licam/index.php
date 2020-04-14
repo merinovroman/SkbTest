@@ -1,7 +1,11 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Частным лицам");
-?><?$APPLICATION->IncludeComponent(
+?>
+
+
+
+<?/*$APPLICATION->IncludeComponent(
 	"bitrix:catalog", 
 	".default_old1", 
 	array(
@@ -139,4 +143,6 @@ $APPLICATION->SetTitle("Частным лицам");
 		)
 	),
 	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);//*/?>
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

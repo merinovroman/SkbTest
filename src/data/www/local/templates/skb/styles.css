@@ -12,6 +12,101 @@ body {
 footer .block-footer-modile-menu {
     display: none;
 }
+
+.container .card-deck .block-main-top {
+    position: relative;
+    overflow: hidden;
+    background-color: #EAEBEE;
+    margin-bottom: 35px;
+    padding: 20px 80px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.container .card-deck .block-main-top h3 {
+    font-weight: bold;
+}
+.container .card-deck .block-main-top h3,
+.container .card-deck .block-main-top .big-text {
+    font-size: 24px;
+}
+.container .card-deck .block-main-top .block-green {
+    position: absolute;
+    z-index: 1;
+    width: 60%;
+    min-width: 250px;
+    height: 100%;
+    left: 60%;
+    top: 0;
+    clip-path: polygon(200px 0px, 100% 0px, 100% 100%, 0px 100%);
+    background: linear-gradient(270deg, rgb(108, 196, 123) 0%, rgb(3, 140, 115) 100%);
+}
+.container .card-deck .block-main-top .block-samokat {
+    background-image: url('img/samokat-5.png');
+    top:0;
+    left: 75%;
+    height: 464px;
+    width: 318px;
+    position: absolute;
+    z-index: 2;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+.container .card-deck .block-main-top .block-btn {
+    margin-top: 25px;
+}
+.btn-read {
+    background: #F65E64;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.btn-read:hover {
+    color: #FFFFFF;
+}
+@media (max-width: 1200px) {
+    .container .card-deck .block-main-top {
+        padding: 20px 20px;
+    }
+    .container .card-deck .block-main-top .block-green {
+        left: 53%;
+        clip-path: polygon(200px 0px, 100% 0px, 100% 100%, 0px 100%);
+    }
+    .container .card-deck .block-main-top .block-samokat {
+        left: 70%;
+    }
+}
+@media (max-width: 1024px) {
+    .container .card-deck .block-main-top {
+        font-size: 11px;
+    }
+    .container .card-deck .block-main-top .block-green {
+        left: 53%;
+        clip-path: polygon(200px 0px, 100% 0px, 100% 100%, 0px 100%);
+    }
+    .container .card-deck .block-main-top .block-samokat {
+        background-image: url('img/samokat-full-5.png');
+        background-size: unset;
+        left: unset;
+        right: 0px;
+        top: unset;
+        bottom: 0;
+        height: 225px;
+        width: 162px;
+    }
+
+}
+@media (max-width: 768px) {
+    .container .card-deck .block-main-top .block-green {
+        left: 62%;
+        clip-path: polygon(200px 0px, 100% 0px, 100% 100%, 0px 100%);
+    }
+    .container .card-deck .block-main-top .doki {
+        display: none;
+    }
+}
 @media (max-width: 767.98px) {
     body {
         padding-top: 0;
