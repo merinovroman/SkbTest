@@ -26,7 +26,8 @@ footer .block-footer-modile-menu {
     font-weight: bold;
 }
 .container .card-deck .block-main-top h3,
-.container .card-deck .block-main-top .big-text {
+.container .card-deck .block-main-top .big-text,
+.container .cards-deck .big-text {
     font-size: 24px;
 }
 .container .card-deck .block-main-top .block-green {
@@ -66,6 +67,41 @@ footer .block-footer-modile-menu {
 .btn-read:hover {
     color: #FFFFFF;
 }
+.container .cards-deck {
+    font-size: 15px;
+}
+.container .cards-deck .item-card {
+    background: #F2F2F2;
+    border-radius: 10px;
+    padding: 20px 30px;
+    position: relative;
+}
+.container .cards-deck .block-item {
+    position: relative;
+    margin-bottom: 20px;
+}
+.container .cards-deck .block-item .block-img {
+    position: absolute;
+    width: 168px;
+    height: 195px;
+    right: 0px;
+    z-index: 2;
+    background-size: 167px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    bottom: 0;
+    border-radius: 10px;
+}
+.container .cards-deck .block-item .small-text {
+    font-size: 12px;
+}
+.container .cards-deck .block-item.item-mch .block-img {
+    background-image: url('img/mch-3.png');
+}
+.container .cards-deck .block-item .more-dierails {
+    margin-top: 10px;
+    padding-top: 10px;
+}
 @media (max-width: 1200px) {
     .container .card-deck .block-main-top {
         padding: 20px 20px;
@@ -96,7 +132,18 @@ footer .block-footer-modile-menu {
         height: 225px;
         width: 162px;
     }
-
+}
+@media (max-width: 991px) {
+    .container .cards-deck .block-item .more-dierails {
+        border: none !important;
+    }
+    .container .cards-deck .item-card {
+        background: #FFFFFF;
+        box-shadow: 0px 10px 30px rgba(204, 208, 214, 0.5);
+    }
+    .container .cards-deck .block-item {
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 768px) {
     .container .card-deck .block-main-top .block-green {
@@ -105,6 +152,9 @@ footer .block-footer-modile-menu {
     }
     .container .card-deck .block-main-top .doki {
         display: none;
+    }
+    .container .cards-deck .block-item {
+
     }
 }
 @media (max-width: 767.98px) {
