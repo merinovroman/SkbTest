@@ -22,4 +22,5 @@ $ docker-compose up
 ## сстраницы
 раздел предложений "Кредиты"
  * <http://localhost/chastnym-licam/kredity/>
- 
+раздел Кредит «Простой и удобный»
+ * <http://localhost/chastnym-licam/kredity/kredit-prostoy-i-udobnyy/>

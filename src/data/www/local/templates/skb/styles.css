@@ -321,6 +321,44 @@ footer .block-footer-modile-menu {
     font-weight: bold;
     color: #000000;
 }
+
+.block-bistro {
+    margin-top: 120px;
+}
+.block-bistro .block-sroll {
+    margin: 30px -15px 0px;
+    display: flex;
+}
+.block-bistro .block-sroll .item-bistsro {
+    background: #F2F2F2;
+    border-radius: 10px;
+    width: 470px;
+    max-width: 470px;
+    min-width: 310px;
+    font-weight: 500;
+    padding: 40px;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    margin-left: 25px;
+}
+.block-bistro .block-sroll .item-bistsro:first-child {
+    margin-left: 0;
+}
+.block-bistro .block-sroll .item-bistsro span {
+    font-size: 14px;
+    display: inline-block;
+    width: 59%;
+}
+.block-bistro .block-sroll .item-bistsro.bistro {
+    background-image: url('img/clock-1.png');
+}
+.block-bistro .block-sroll .item-bistsro.doki {
+    background-image: url('img/pasp-1.png');
+}
+.block-bistro .block-sroll .item-bistsro.usloviya {
+    background-image: url('img/comp-1.png');
+}
+
 @media (min-width: 768px) {
     .kdNHTS {
         margin-bottom: 70px;
@@ -335,6 +373,9 @@ footer .block-footer-modile-menu {
     .cMcIFR {
         width: 210px;
         margin: 0 auto;
+    }
+    .block-bistro .block-sroll {
+        margin: 40px 0px 0px;
     }
 }
 @media (min-width: 1024px) {
@@ -356,15 +397,6 @@ footer .block-footer-modile-menu {
         width: calc((100% - 80px) / 3);
         padding: 200px 30px 30px;
     }
-    .kuloBk {
-
-    }
-    .kozmcS {
-
-    }
-    .jsvCKf {
-
-    }
     .ckfICs article + article,
     .jsvCKf article + article {
         margin-left: 40px;
@@ -373,12 +405,35 @@ footer .block-footer-modile-menu {
         width: auto;
         margin: 0;
     }
+    .block-bistro .block-sroll {
+        margin: 0px;
+    }
 }
 @media (max-width: 767px) {
     .ckfICs {
         width: calc(100% + 30px);
         overflow-x: auto;
         padding: 0px 15px;
+    }
+    .block-bistro .block-sroll {
+        width: calc(100% + 30px);
+        overflow-x: auto;
+        padding: 0px 15px;
+    }
+    .block-bistro .block-sroll .item-bistsro {
+        background: #FFFFFF;
+        border: 1px solid #E6E8E0;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .block-bistro .block-sroll .item-bistsro.bistro,
+    .block-bistro .block-sroll .item-bistsro.doki,
+    .block-bistro .block-sroll .item-bistsro.usloviya {
+        background: none;
+    }
+    .block-bistro .block-sroll .item-bistsro span {
+        width: 100%;
     }
 }
 
@@ -424,6 +479,11 @@ footer .block-footer-modile-menu {
     }
     .container .cards-deck .block-item {
         margin-bottom: 20px;
+    }
+    .block-bistro .block-sroll {
+        width: calc(100% + 30px);
+        overflow-x: auto;
+        padding: 0px 15px;
     }
 }
 @media (max-width: 768px) {
