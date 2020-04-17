@@ -148,6 +148,179 @@ footer .block-footer-modile-menu {
     font-size: 18px;
     line-height: 22px;
 }
+
+.block-calc-slider-credit {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    color: #747474;
+}
+.block-calc-slider-credit .item-card .row,
+.block-calc-slider-credit .block-slider {
+    margin-bottom: 25px;
+}
+.block-calc-slider-credit .text-sum {
+    line-height: 3em;
+}
+.block-calc-slider-credit .credit-value .valut,
+.block-calc-slider-credit .credit-value #summ-amount {
+    font-weight: 500;
+    font-size: 33px;
+    color: #262626;
+}
+.block-calc-slider-credit .ui-widget.ui-widget-content {
+    height: 5px;
+    background: #038C73;
+    position: relative;
+}
+.block-calc-slider-credit .ui-state-default {
+    top: -.5em;
+    margin-left: 0;
+    border-radius: 10px;
+}
+.block-calc-slider-credit .ui-state-active {
+    background: #038C73;
+}
+.block-calc-slider-credit .ui-state-default[style = 'left: 100%;'] {
+    left: 98%!important;
+    width: 1.2em;
+    height: 1.2em;
+}
+.block-calc-slider-credit .months {
+    position: relative;
+    height: 31px;
+}
+.block-calc-slider-credit .months b {
+    position: absolute;
+    text-align: center;
+    height: 31px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 100%;
+    top: 0px;
+    z-index: 2;
+    color: #000;
+}
+.block-calc-slider-credit .months b:last-child {
+    left: 98%!important;
+}
+.block-calc-slider-credit .item-card {
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(204, 208, 214, 0.5);
+    border-radius: 10px;
+    padding: 30px;
+}
+.block-calc-slider-credit .item-card {
+
+}
+.cMcIFR {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 65px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 0;
+}
+.FbwbO {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 26px;
+    width: 32px;
+    height: 32px;
+    line-height: 29px;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box !important;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(3, 140, 115);
+    border-image: initial;
+    border-radius: 31px;
+    outline: none !important;
+}
+.FbwbO::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 7px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+    outline: none !important;
+}
+.dzVdrW {
+    position: relative;
+    display: inline-flex;
+    flex-shrink: 0;
+    font-size: 26px;
+    width: 32px;
+    height: 32px;
+    line-height: 29px;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    box-sizing: border-box !important;
+    background: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(3, 140, 115);
+    border-image: initial;
+    border-radius: 31px;
+    outline: none !important;
+}
+.dzVdrW::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 2px;
+    width: 12px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+    outline: none !important;
+}
+.dzVdrW::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 12px;
+    width: 2px;
+    background-color: rgb(0, 0, 0);
+    transform: translate(-50%, -50%);
+}
+.cMcIFR > div {
+    padding: 0px 12px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 65px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.irUjrl {
+    white-space: nowrap;
+}
+.guNFLw {
+    margin: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background: #fff;
+    border: none;
+    width: 110px;
+}
+.guNFLw,
+.procent {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+}
 @media (min-width: 768px) {
     .kdNHTS {
         margin-bottom: 70px;
@@ -158,6 +331,10 @@ footer .block-footer-modile-menu {
     .fatiKL {
         font-size: 50px;
         line-height: 58px;
+    }
+    .cMcIFR {
+        width: 210px;
+        margin: 0 auto;
     }
 }
 @media (min-width: 1024px) {
@@ -191,6 +368,10 @@ footer .block-footer-modile-menu {
     .ckfICs article + article,
     .jsvCKf article + article {
         margin-left: 40px;
+    }
+    .cMcIFR {
+        width: auto;
+        margin: 0;
     }
 }
 @media (max-width: 767px) {
@@ -269,5 +450,9 @@ footer .block-footer-modile-menu {
     }
     footer .block-footer-modile-menu {
         display: flex;
+    }
+    .cMcIFR {
+        width: 210px;
+        margin: 0 auto;
     }
 }
