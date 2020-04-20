@@ -39,14 +39,14 @@ IncludeTemplateLangFile(__FILE__);
                 <div class="row">
                     <div class="col-12 col-md-auto">
                         <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-                            array(
+                            [
                                 "COMPONENT_TEMPLATE" => ".default",
                                 "PATH" => SITE_TEMPLATE_PATH."/include/logo.php",
                                 "AREA_FILE_SHOW" => "file",
                                 "AREA_FILE_SUFFIX" => "",
                                 "AREA_FILE_RECURSIVE" => "Y",
                                 "EDIT_TEMPLATE" => "standard.php"
-                            ),
+                            ],
                             false
                         );?>
                     </div>
@@ -110,14 +110,14 @@ IncludeTemplateLangFile(__FILE__);
                 <div class="row">
                     <div class="col">
                         <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-                            array(
+                            [
                                 "COMPONENT_TEMPLATE" => ".default",
                                 "PATH" => SITE_TEMPLATE_PATH."/include/logo.php",
                                 "AREA_FILE_SHOW" => "file",
                                 "AREA_FILE_SUFFIX" => "",
                                 "AREA_FILE_RECURSIVE" => "Y",
                                 "EDIT_TEMPLATE" => "standard.php"
-                            ),
+                            ],
                             false
                         );?>
                     </div>
@@ -224,12 +224,12 @@ IncludeTemplateLangFile(__FILE__);
         <?$APPLICATION->IncludeComponent(
     "bitrix:breadcrumb",
     ".default",
-            array(
+            [
                 "START_FROM" => "1",
                 "PATH" => "",
                 "SITE_ID" => "s1",
                 "COMPONENT_TEMPLATE" => ".default"
-            ),
+            ],
             false
         );?>
     </div>

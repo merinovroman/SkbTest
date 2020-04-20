@@ -108,14 +108,14 @@ $APPLICATION->SetTitle("Кредит «Простой и удобный»");
 
 
 <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-    array(
+    [
         "COMPONENT_TEMPLATE" => ".default",
         "PATH" => "/include/slider-kredit.php",
         "AREA_FILE_SHOW" => "file",
         "AREA_FILE_SUFFIX" => "",
         "AREA_FILE_RECURSIVE" => "Y",
         "EDIT_TEMPLATE" => "standard.php"
-    ),
+    ],
     false
 );?>
 

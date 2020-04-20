@@ -7,14 +7,14 @@
             <div class="row">
                 <div class="col-12 col-md-auto">
                     <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-                        array(
+                        [
                             "COMPONENT_TEMPLATE" => ".default",
                             "PATH" => SITE_TEMPLATE_PATH."/include/logo.php",
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_SUFFIX" => "",
                             "AREA_FILE_RECURSIVE" => "Y",
                             "EDIT_TEMPLATE" => "standard.php"
-                        ),
+                        ],
                         false
                     );?>
                 </div>
@@ -108,14 +108,14 @@
                     <div class="row free-phone">
                         <div class="col-12 col-sm">
                             <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-                                array(
+                                [
                                     "COMPONENT_TEMPLATE" => ".default",
                                     "PATH" => SITE_TEMPLATE_PATH."/include/free-phone.php",
                                     "AREA_FILE_SHOW" => "file",
                                     "AREA_FILE_SUFFIX" => "",
                                     "AREA_FILE_RECURSIVE" => "Y",
                                     "EDIT_TEMPLATE" => "standard.php"
-                                ),
+                                ],
                                 false
                             );?>
                         </div>
@@ -134,40 +134,40 @@
             <div class="row text-left">
                 <div class="col-12 col-md-5 copyright">
                     <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-                        array(
+                        [
                             "COMPONENT_TEMPLATE" => ".default",
                             "PATH" => SITE_TEMPLATE_PATH."/include/copyright.php",
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_SUFFIX" => "",
                             "AREA_FILE_RECURSIVE" => "Y",
                             "EDIT_TEMPLATE" => "standard.php"
-                        ),
+                        ],
                         false
                     );?>
                 </div>
                 <div class="offset-md-1 col-12 col-md-3 footer-social">
                     <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-                        array(
+                        [
                             "COMPONENT_TEMPLATE" => ".default",
                             "PATH" => SITE_TEMPLATE_PATH."/include/footer-social.php",
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_SUFFIX" => "",
                             "AREA_FILE_RECURSIVE" => "Y",
                             "EDIT_TEMPLATE" => "standard.php"
-                        ),
+                        ],
                         false
                     );?>
                 </div>
                 <div class="offset-md-1 col-12 col-md-2 footer-sidebar">
                     <?$APPLICATION->IncludeComponent("bitrix:main.include", ".default",
-                        array(
+                        [
                             "COMPONENT_TEMPLATE" => ".default",
                             "PATH" => SITE_TEMPLATE_PATH."/include/footer-sidebar.php",
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_SUFFIX" => "",
                             "AREA_FILE_RECURSIVE" => "Y",
                             "EDIT_TEMPLATE" => "standard.php"
-                        ),
+                        ],
                         false
                     );?>
                 </div>
